@@ -1,22 +1,27 @@
 export const navbarData = [
     {
         routeLink: 'dashboard',
-        icon: 'fal fa-chart-line',
+        icon: 'far fa-chart-line',
         label: 'Dashboard'
     },
     {
         routeLink: 'coreAssets',
-        icon: 'fal fa-compass',
+        icon: 'far fa-compass',
         label: 'Core Assets'
     },
     {
         routeLink: 'reports',
-        icon: 'fal fa-file',
+        icon: 'far fa-file',
         label: 'Reports'
     },
     {
+        routeLink: 'request-form',
+        icon: 'far fa-clipboard',
+        label: 'Request-Form'
+    },
+    {
         routeLink: 'settings',
-        icon: 'fal fa-toolbox',
+        icon: 'far fa-toolbox',
         label: 'Settings'
     },
     

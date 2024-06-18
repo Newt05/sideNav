@@ -10,7 +10,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CoreAssetsComponent } from './core-assets/core-assets.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
-
+import { RequestFormComponent } from './request-form/request-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,15 +23,19 @@ import { SettingsComponent } from './settings/settings.component';
     DashboardComponent,
     CoreAssetsComponent,
     ReportsComponent,
-    SettingsComponent
-    
+    SettingsComponent,
+    RequestFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
